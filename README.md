@@ -2,4 +2,4 @@
 
 Type ***npm run start*** to start the development server
 
-Type **npm run sever** to start the json-sever
+Type ***npm run sever*** to start the json-sever
