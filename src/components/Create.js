@@ -7,7 +7,7 @@ const Create = () => {
 	const [author, setAuthor] = useState('mario');
 	const [submited, setSubmited] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
-	const history = useHistory();
+	// const history = useHistory();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -24,8 +24,8 @@ const Create = () => {
 		}).then(() => {
 			setSubmited(true);
 			setIsLoading(false);	
-			// setTimeout(() => setSubmited(false), 600);
-			history.push('/')
+			setTimeout(() => setSubmited(false), 600);
+			// history.push('/')
 		});
 
 	}
